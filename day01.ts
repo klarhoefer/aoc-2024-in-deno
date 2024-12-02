@@ -4,7 +4,7 @@ function convertInput(puzzle: string): [number[], number[]] {
     const lcol = []
     const rcol = []
     for (const line of lines) {
-        const [l, r] = line.split(/\s+/).map(s => parseInt(s.trim()))
+        const [l, r] = line.split(/\s+/).map(s => parseInt(s))
         lcol.push(l)
         rcol.push(r)
     }
